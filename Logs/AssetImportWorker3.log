@@ -1,0 +1,619 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.1f1 (3b70a0754835) revision 3895456'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16217 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/jarri/Technoire
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+59535
+Successfully changed project path to: C:/Users/jarri/Technoire
+C:/Users/jarri/Technoire
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 83.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.1f1 (3b70a0754835)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jarri/Technoire/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2216)
+    Vendor:   NVIDIA
+    VRAM:     10078 MB
+    Driver:   30.0.14.7111
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010309 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 80.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.537 seconds
+Domain Reload Profiling:
+	ReloadAssembly (537ms)
+		BeginReloadAssembly (55ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (391ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (84ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (242ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (117ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005049 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jarri\Technoire\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\jarri\Technoire\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 68.36 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Domain Reload Profiling:
+	ReloadAssembly (893ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (714ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (199ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (357ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (68ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3920 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (225.2 KB). Loaded Objects now: 4373.
+Memory consumption went from 147.2 MB to 147.0 MB.
+Total: 2.383100 ms (FindLiveObjects: 0.221200 ms CreateObjectMapping: 0.125700 ms MarkObjects: 1.922700 ms  DeleteObjects: 0.112400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 702312.763024 seconds.
+  path: Assets/Art/Tilemaps/corner_yellow_sidewalk.asset
+  artifactKey: Guid(dace633a571c13740a619cf5ace467e1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/corner_yellow_sidewalk.asset using Guid(dace633a571c13740a619cf5ace467e1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3d3c0963a5bbf6ebf9dba16ea27ede29') in 0.063569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Tiles/CyberRoads.png
+  artifactKey: Guid(1532db8b3e785eb4f96644f57c35318c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberRoads.png using Guid(1532db8b3e785eb4f96644f57c35318c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3b4fc19f50dee17ae78282b2b6219e7e') in 0.045060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Art/Tilemaps/CyberStreets_88.asset
+  artifactKey: Guid(dbe2fa08aa382f743b4b004f17eb76c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/CyberStreets_88.asset using Guid(dbe2fa08aa382f743b4b004f17eb76c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '029098e0609ee03f4c7331077c615215') in 0.013812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Tilemaps/CyberStreets_90.asset
+  artifactKey: Guid(87f00dd7d645cad468aeee85f3238164) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/CyberStreets_90.asset using Guid(87f00dd7d645cad468aeee85f3238164) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e58c23e32952dca973572d0cef5a2768') in 0.008086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Tiles/CyberBattle/Battle field_16.asset
+  artifactKey: Guid(15396e3485e43cf4794a3882f10e7541) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBattle/Battle field_16.asset using Guid(15396e3485e43cf4794a3882f10e7541) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9972251eb4ca34b253fe42cfff7d1da5') in 0.008124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Tilemaps/Roads.prefab
+  artifactKey: Guid(0edf05869bc31bc42b72ce7463f9ac85) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/Roads.prefab using Guid(0edf05869bc31bc42b72ce7463f9ac85) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3ac0e1027fb066f71542806868f7f91d') in 0.016267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Tiles/CyberBattle/Battle field_15.asset
+  artifactKey: Guid(2724a7ca58391f34da40963a7237d746) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBattle/Battle field_15.asset using Guid(2724a7ca58391f34da40963a7237d746) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '22efe774b726603ba0b6b28d4e763aa9') in 0.008037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Tiles/CyberBattle/Battle field_1.asset
+  artifactKey: Guid(8db260b52535b1246a3cdb948c9eb2dc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBattle/Battle field_1.asset using Guid(8db260b52535b1246a3cdb948c9eb2dc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f235bb9996c4f8f5ac6ac32f7671686') in 0.008441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Tilemaps/corner_yellow_sidewalk_2.asset
+  artifactKey: Guid(30cc360e0d61ce6449a2e353d11cac48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/corner_yellow_sidewalk_2.asset using Guid(30cc360e0d61ce6449a2e353d11cac48) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3c4142a11f96c270dc5233d2da51667e') in 0.007973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Tilemaps/Traffic light_2.asset
+  artifactKey: Guid(9a83ba89ddd25024793557958a2257e1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/Traffic light_2.asset using Guid(9a83ba89ddd25024793557958a2257e1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21a1281cd9c5fd5487ccb18a3c0f4b98') in 0.008144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_36.asset
+  artifactKey: Guid(62780c9a2bec7e444b97992bd3fe7217) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_36.asset using Guid(62780c9a2bec7e444b97992bd3fe7217) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7ab287e048ab8747540c0dca55ae6d5a') in 0.007009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_23.asset
+  artifactKey: Guid(a2f3e0b51065bb14aaa2f1459b3cbe05) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_23.asset using Guid(a2f3e0b51065bb14aaa2f1459b3cbe05) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '36abfd2e2ff5f88979992d9241cb3e1d') in 0.007492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_27.asset
+  artifactKey: Guid(ab8b55f4899f86a468b2d43c4dc3d2ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_27.asset using Guid(ab8b55f4899f86a468b2d43c4dc3d2ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '56a8de39e4980a1999710f1f98fefc67') in 0.008142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_33.asset
+  artifactKey: Guid(3192ddcac5f6b09468451694e98a46a2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_33.asset using Guid(3192ddcac5f6b09468451694e98a46a2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9342c3a1a796f9bb7b24f8fed46b638f') in 0.007158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_0.asset
+  artifactKey: Guid(b094e04c27b4aea479980cc29a05ad1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_0.asset using Guid(b094e04c27b4aea479980cc29a05ad1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3774302076eb7b85fce3681660b33316') in 0.011997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_30.asset
+  artifactKey: Guid(7872b88270112fe4f946218b679cd078) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_30.asset using Guid(7872b88270112fe4f946218b679cd078) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3948d1e43359d003bd69b745e608e3f1') in 0.007212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_39.asset
+  artifactKey: Guid(6139a33aeb7bc3446adb8442a8ad3b79) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_39.asset using Guid(6139a33aeb7bc3446adb8442a8ad3b79) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d02cbc6aaf04d206fae68436d4154d4') in 0.007720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_45.asset
+  artifactKey: Guid(8e51712bd9ab74a4cb504cb70c3cdf78) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_45.asset using Guid(8e51712bd9ab74a4cb504cb70c3cdf78) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aff72ec85d5bd7a860012ebe2e340b0d') in 0.007829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_20.asset
+  artifactKey: Guid(18beb1e248878614d921bfd44901d145) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_20.asset using Guid(18beb1e248878614d921bfd44901d145) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '742373a4628da2c0634efaa5704e7590') in 0.007175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Tilemaps/Traffic light_4.asset
+  artifactKey: Guid(9cd7d536a53698e4f95db6f9b9e328a9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/Traffic light_4.asset using Guid(9cd7d536a53698e4f95db6f9b9e328a9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '82365c706d77eef5314225e72e1796a2') in 0.008565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Tilemaps/CyberStreets_24.asset
+  artifactKey: Guid(4129d9952f6df1f4c9559d799d406e13) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/CyberStreets_24.asset using Guid(4129d9952f6df1f4c9559d799d406e13) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e1d7c2a78ddd023a781d52805d1e1e8') in 0.012693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_46.asset
+  artifactKey: Guid(3290ccfa4c409504cb9efc50cedf84d4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_46.asset using Guid(3290ccfa4c409504cb9efc50cedf84d4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b1b831ce34f5556c018639d403a3b93') in 0.008461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Tiles/CyberBattle/Battle field_6.asset
+  artifactKey: Guid(ccfa6cff0d0ed394ab6442c8f7af624e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBattle/Battle field_6.asset using Guid(ccfa6cff0d0ed394ab6442c8f7af624e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3c19baca71ff06e33e1fa192c183b090') in 0.007219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_42.asset
+  artifactKey: Guid(ac0fd965eeb2f0748a58957ec0b4e8a7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_42.asset using Guid(ac0fd965eeb2f0748a58957ec0b4e8a7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '611597c2f5927e1ec2906013f6a5588c') in 0.008641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/BattleSystem.unity
+  artifactKey: Guid(26d79a67e4bf45d47a0056d69fa771f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/BattleSystem.unity using Guid(26d79a67e4bf45d47a0056d69fa771f0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6eeec50c69b8284b784efd6180abf250') in 0.008701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Animations/TechNoire .controller
+  artifactKey: Guid(ac06fdb464f3dd441a6d7046c8951434) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Animations/TechNoire .controller using Guid(ac06fdb464f3dd441a6d7046c8951434) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f3d726e941e39e31c74b7855b6ce793') in 0.008519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Aesprite/cyberbuildings.aseprite
+  artifactKey: Guid(baf229b8d02f319429752b3fd7b1a53a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Aesprite/cyberbuildings.aseprite using Guid(baf229b8d02f319429752b3fd7b1a53a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5355e7ca0569ad8eb84cfeec872e1500') in 0.007830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_5.asset
+  artifactKey: Guid(1605c025c02da654b80fe1f90f95cc9a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_5.asset using Guid(1605c025c02da654b80fe1f90f95cc9a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa90bd3805560cb086998595e5c38fda') in 0.012423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Aesprite/tireTread.aseprite
+  artifactKey: Guid(9c86012011bf98743bc420b3ef7f41cd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Aesprite/tireTread.aseprite using Guid(9c86012011bf98743bc420b3ef7f41cd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9fe35e2bfb85118b41410e8f24f16139') in 0.007962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Tilemaps/Buildings For REAL.prefab
+  artifactKey: Guid(3f2e6cd576646c54aa88e1c2c17b5014) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/Buildings For REAL.prefab using Guid(3f2e6cd576646c54aa88e1c2c17b5014) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e0f119d74c31f707b60828b2ccbea74e') in 0.031544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_32.asset
+  artifactKey: Guid(f53c19271ffc894439ef8f135bbb8f37) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_32.asset using Guid(f53c19271ffc894439ef8f135bbb8f37) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbff131e3a3b1149fc601fc480526fc7') in 0.007762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Tilemaps/CyberStreets_86.asset
+  artifactKey: Guid(320250c89d564b64996b838686e3b3a2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/CyberStreets_86.asset using Guid(320250c89d564b64996b838686e3b3a2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4e98d87c6067c6b5893a4229375d9a85') in 0.008046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Tilemaps/CyberStreets_107.asset
+  artifactKey: Guid(d0a2828b7db0e29459c7064b0439a5ab) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/CyberStreets_107.asset using Guid(d0a2828b7db0e29459c7064b0439a5ab) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '28611dbe3fcf180fc0333aae30e143ca') in 0.008958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Tilemaps/CyberStreets_23.asset
+  artifactKey: Guid(e2d9aef01e814444c8cb0ec3dac6498c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tilemaps/CyberStreets_23.asset using Guid(e2d9aef01e814444c8cb0ec3dac6498c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f1ac80b950a5693a7702dfbfcfea94e9') in 0.006826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.105034 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_56.asset
+  artifactKey: Guid(6d2fc9cbe56288a4dbb987e9a9c4b2ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_56.asset using Guid(6d2fc9cbe56288a4dbb987e9a9c4b2ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0fad84ff8f1f9aeea872960ff7480760') in 0.009393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Sprites/Environment/Buildings and signs/cyberbuildings.png
+  artifactKey: Guid(24bacc5c2820ec344a058f7b1494588a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/Environment/Buildings and signs/cyberbuildings.png using Guid(24bacc5c2820ec344a058f7b1494588a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '87842a7f169f3b5d632cf3de6ef754a2') in 0.028224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Tiles/CyberRoad/CyberRoads_42.asset
+  artifactKey: Guid(d006533d314824e4698e54453f16ef02) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberRoad/CyberRoads_42.asset using Guid(d006533d314824e4698e54453f16ef02) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '280fafbca7e98813fd36820c202e2ebb') in 0.007142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Tiles/CyberRoad/CyberRoads_1.asset
+  artifactKey: Guid(f54007ba2688ab4469d55b3e8b215637) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberRoad/CyberRoads_1.asset using Guid(f54007ba2688ab4469d55b3e8b215637) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '884c2ffb3094550a47ab38c366ff7727') in 0.007118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_92.asset
+  artifactKey: Guid(01a94945991c42d44a420704cb8e4590) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_92.asset using Guid(01a94945991c42d44a420704cb8e4590) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e15c88630941fb2e71f6b892a032d2b6') in 0.007274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Sprites/TechNoire Main/IDLE/Technoire Front2.png
+  artifactKey: Guid(ca6b1b558136991498234983fc81b9a3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/TechNoire Main/IDLE/Technoire Front2.png using Guid(ca6b1b558136991498234983fc81b9a3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2d36d7c236cf6435e6da7d5920dbb3da') in 0.012968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_80.asset
+  artifactKey: Guid(32c09a69594c96841a721b74b1ac4cfb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_80.asset using Guid(32c09a69594c96841a721b74b1ac4cfb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '92a0c43689155ecd4257fafbba496172') in 0.008106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Art/Sprites/Environment/battlegrounds/Battle field.aseprite
+  artifactKey: Guid(d721868e7ec47d347870953e0e82e342) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/Environment/battlegrounds/Battle field.aseprite using Guid(d721868e7ec47d347870953e0e82e342) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1286ac2358d8ab02e04c71c3596f751a') in 0.005825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_62.asset
+  artifactKey: Guid(e4f9d7c76f8cc6448a7926ec6901815f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_62.asset using Guid(e4f9d7c76f8cc6448a7926ec6901815f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c312b0c31662510294d407ed257142e') in 0.007260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Tiles/CyberRoad/CyberRoads.png
+  artifactKey: Guid(19f5398f8db60b24bac60adae0a6ac2d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberRoad/CyberRoads.png using Guid(19f5398f8db60b24bac60adae0a6ac2d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '916a0be8e6344605020492cc639d4ebd') in 0.023227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_90.asset
+  artifactKey: Guid(e4c4febfb17d7fa4d888ac9726f8273a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_90.asset using Guid(e4c4febfb17d7fa4d888ac9726f8273a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7131dbae825a33bed14666f9fc2aa3cb') in 0.007030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Tiles/CyberRoad/CyberRoads_8.asset
+  artifactKey: Guid(2f789490a3bf9f443b500d134ad729e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberRoad/CyberRoads_8.asset using Guid(2f789490a3bf9f443b500d134ad729e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9916db294d2a29ccbca3f6a15bebf77b') in 0.008578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Sprites/TechNoire Main/IDLE/Technoire West1.png
+  artifactKey: Guid(7754d439796603542ba35faad2602483) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/TechNoire Main/IDLE/Technoire West1.png using Guid(7754d439796603542ba35faad2602483) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b626ca430e36237c08dc76c77ae3a27') in 0.013011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_77.asset
+  artifactKey: Guid(b36d878405a84974bac851f93dc8e4c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_77.asset using Guid(b36d878405a84974bac851f93dc8e4c1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0321aeba1fb0e6f2194d44526a463920') in 0.007466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_65.asset
+  artifactKey: Guid(2a2174149c960a346aba750ed0dca6af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_65.asset using Guid(2a2174149c960a346aba750ed0dca6af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa05701c71cf05afb8e97bcebab89ad4') in 0.007638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_78.asset
+  artifactKey: Guid(4a82edf2c48c56e4a94209a5be6a09f4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_78.asset using Guid(4a82edf2c48c56e4a94209a5be6a09f4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '63d7e0954370850fa45a4e7f37eb8436') in 0.007891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Sprites/TechNoire Main/IDLE/Technoire South RUn.aseprite
+  artifactKey: Guid(c6450801af5985748bb3874d0bbe158a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/TechNoire Main/IDLE/Technoire South RUn.aseprite using Guid(c6450801af5985748bb3874d0bbe158a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '422cfa1dae9c9865ae193a9b3e8b9aca') in 0.006270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_72.asset
+  artifactKey: Guid(77e92cbe8c1ffaf4caa8cfb58b72940d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_72.asset using Guid(77e92cbe8c1ffaf4caa8cfb58b72940d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e1a2d74a1bab2da8c0567828c63e9025') in 0.007284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Art/Sprites/TechNoire Main/IDLE/Technoire Front.png
+  artifactKey: Guid(a947589665a3e154784c21a5ca1f4310) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/TechNoire Main/IDLE/Technoire Front.png using Guid(a947589665a3e154784c21a5ca1f4310) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '54d228de82db423e3274254760c17017') in 0.011913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_67.asset
+  artifactKey: Guid(134e58ec4461b4f4488e4748d21d8f3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_67.asset using Guid(134e58ec4461b4f4488e4748d21d8f3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '84f09222a3102a45427078c5192307c5') in 0.008236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Sprites/TechNoire Main/IDLE/Technoire Back.png
+  artifactKey: Guid(c0cc2230e660ba347a552be4058dd64d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/TechNoire Main/IDLE/Technoire Back.png using Guid(c0cc2230e660ba347a552be4058dd64d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '71075873819fee6a7933be1ebd0252ec') in 0.011117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_73.asset
+  artifactKey: Guid(d06a3070fe93a25488c5d90dfc84f037) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_73.asset using Guid(d06a3070fe93a25488c5d90dfc84f037) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ee31192e565366948b3e9d824112a173') in 0.007338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_58.asset
+  artifactKey: Guid(9b1e2e2652e2b934fb4c887b7770cbe9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_58.asset using Guid(9b1e2e2652e2b934fb4c887b7770cbe9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '32b69c8d71abd89bdcddde39a16c0d13') in 0.006904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Tiles/CyberRoad/CyberRoads_50.asset
+  artifactKey: Guid(97e6268a46e527b439b7913632450f0a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberRoad/CyberRoads_50.asset using Guid(97e6268a46e527b439b7913632450f0a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5931cb7feccbe20e426030b896a3a00c') in 0.009272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_85.asset
+  artifactKey: Guid(f82cc4d4c48533d4b82743cb1cdc12ec) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_85.asset using Guid(f82cc4d4c48533d4b82743cb1cdc12ec) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1ef4171cdc34c7d73247fcb78d2d0e6a') in 0.007810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Art/Tiles/CyberBuildings/cyberbuildings_79.asset
+  artifactKey: Guid(e9f7e255607005442aa2df0cd6a78eb0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Tiles/CyberBuildings/cyberbuildings_79.asset using Guid(e9f7e255607005442aa2df0cd6a78eb0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b3944ff9a94250dbf411a5760c10d2c2') in 0.006989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.090353 seconds.
+  path: Assets/Art/Sprites/TechNoire Main/Animations/Runs/Technoire South RUn.png
+  artifactKey: Guid(9a368e39faa0f664faa5b4fa07c7f23f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/TechNoire Main/Animations/Runs/Technoire South RUn.png using Guid(9a368e39faa0f664faa5b4fa07c7f23f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b9aaf45f1ed74193adcad6d53e8d8ad') in 0.012545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Art/Sprites/TechNoire Main/Animations/Walk/walk East-sheet-sheet.png
+  artifactKey: Guid(555efdf5c295e514c850b40948caf2c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Sprites/TechNoire Main/Animations/Walk/walk East-sheet-sheet.png using Guid(555efdf5c295e514c850b40948caf2c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f0e158c068b71c1bde6ec9497700e542') in 0.011566 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (189.8 KB). Loaded Objects now: 4373.
+Memory consumption went from 69.8 MB to 69.6 MB.
+Total: 2.571900 ms (FindLiveObjects: 0.232400 ms CreateObjectMapping: 0.130400 ms MarkObjects: 2.090000 ms  DeleteObjects: 0.118200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
