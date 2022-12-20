@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParadoxNotion", "ParadoxNotion.csproj", "{8413A366-D9C4-A040-7049-8219FA75D366}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{AE2E5F87-03B8-DA6A-8734-9E088007211B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.Modules.UnityMathematics", "Sirenix.OdinInspector.Modules.UnityMathematics.csproj", "{BCF001D5-833F-89FF-1F69-5EDC3ACF8D55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8413A366-D9C4-A040-7049-8219FA75D366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8413A366-D9C4-A040-7049-8219FA75D366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8413A366-D9C4-A040-7049-8219FA75D366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8413A366-D9C4-A040-7049-8219FA75D366}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE2E5F87-03B8-DA6A-8734-9E088007211B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE2E5F87-03B8-DA6A-8734-9E088007211B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE2E5F87-03B8-DA6A-8734-9E088007211B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE2E5F87-03B8-DA6A-8734-9E088007211B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF001D5-833F-89FF-1F69-5EDC3ACF8D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF001D5-833F-89FF-1F69-5EDC3ACF8D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF001D5-833F-89FF-1F69-5EDC3ACF8D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF001D5-833F-89FF-1F69-5EDC3ACF8D55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

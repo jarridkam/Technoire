@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AE2E5F87-03B8-DA6A-8734-9E088007211B}</ProjectGuid>
+    <ProjectGuid>{8413A366-D9C4-A040-7049-8219FA75D366}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>ParadoxNotion</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,68 +56,368 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Attacks/AttackData.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Movement/CombatAnimationManager.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/MultipleChoiceNode.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/DialogController.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/TopicNode.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/PlayerController.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/SO/Data/CharacterData.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/Choice.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/Player.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/WorldTimeDate.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Editors/CustomAttackInspector.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/CameraFollow.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/BaseDialogNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Combat Events/CombatEvents.cs" />
-    <Compile Include="Assets/Scripts/C#/Traditional Classes/StandardEditorRect.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/DialogFlowNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Editors/AttackDatabaseInspector.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Concepts/Dialog.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/MultipleChoiceV2Node.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/TestNode.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/GreetingNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Movement/NpcGridMovement.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Attacks/AttackObject.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Concepts/Statement.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Containers/AttackContainter.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Combat Events/PlayerCombatManager.cs" />
-    <Compile Include="Assets/Scripts/Scriptable Objects/Mechanics/Condition.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/DialogUIController.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/NPC/CombatNPC.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/NPC.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Icons/DialogTopicIcon.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/SO/Data/PlayerData.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/Movement.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Movement/GridMovement.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/ResponseNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Containers/AttackDatabase.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/DialogInteractable.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/ChoiceV2.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/CharacterBase.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Custom/Return.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/FlowControlNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/VisibilityEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/SetOtherVariable.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Field/BaseReflectedFieldNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsJsonParser.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/GetVariable.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/SerializedFieldInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/IMigratable.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Application/ApplicationQuitEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/ParamMode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/WelcomeWindow.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/FlowGraph.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Inspectors/GlobalBlackboardInspector.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Flow Converters/FlowParametersNodes.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Editor/Commands.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Internal/GraphLoadData.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Internal/BBMappingParameter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/ActiveOwnersOverview.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/GraphEditor.Toolbar.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/CallableActionNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/fsUnityObjectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/CreateDictionary.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Input/KeyboardEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Togglers/MultiToggle.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Method/JitMethodNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Events/SignalDefinition.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Variable.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/AttributeDrawers.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Internal/MissingVariableType.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/Collision2DEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_Constructors.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Other/ConditionalUpdateEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/ReflectionWrappers/ReflectedAction.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/TypePrefsEditorWindow.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Selectors/SelectOnString.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/Bounds_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/GraphEditor.Panels.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Input/InputButtonEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Togglers/Sequence.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Other/GoTo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsForwardConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/GraphOwner.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Editor.Connection.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/Rect_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/CallableFunctionNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Utility/CurveUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/GetSharpEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/LogTag.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Graph/StartEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/OnDrawGizmos.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/ReflectedNodesHelper.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/DeserializeFromAttribute.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_ReflectedFieldNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/MouseAgent2DEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Input/InputAxisEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Extractor/PureReflectedExtractorNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Other/OscillatorEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/GlobalBlackboard.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/TypeConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Custom/CustomFunctionEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/SerializedEventInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Internal/BlackboardSource.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/IBlackboardExtensions.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Flow Mergers/XORMerge.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/SerializedTypeInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/Implemented Nodes/LogicalOperators.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorUtils/EditorUtils.ScriptInfos.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Event/SharpEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Custom/CustomFunctionCall.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/SyncBlackboard.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/InvokeSignal.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Input/MouseEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/Databases/Styles.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/MouseAgentEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/AnimatorEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/SerializedMethodInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/CustomObjectWrappers/ExternalImplementedNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsJsonPrinter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Iterators/ForLoop.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/ConditionList.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/UnityEventAutoCallbackEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/UndoUtility.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Flow Converters/LatchInt.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorUtils/EditorUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Prefs.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/NullObject.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/ObjectStateEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorUtils/EditorUtils.ReflectedInspector.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Attributes.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Constructor/BaseReflectedConstructorNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_Extractors.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/EventUniversalDelegate.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Filters/Cooldown.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsDirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Graph/DisableEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/DelegateCallbackEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorUtils/EditorUtils.ContextMenus.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/ParametresDef.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Ports.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchBool.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/GraphRefactor.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/CustomEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/Implemented Nodes/Tweening.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/EventNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/UI/UIPointerEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsBaseConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsCyclicReferenceManager.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/UI/UIButtonEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/IGraphAssignableExtensions.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Utility/StringUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/Implemented Nodes/Collections/Dictionaries.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/GenericMenuBrowser.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsGlobalConfig.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Internal/MissingConnection.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/InternalVar.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Macros/MacroInputNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/FlowScript.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Editors/TaskEditor.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Wild.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Internal/MissingBBParameterType.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/RectOffset_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/UnivarsalDelegate.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/NodeReference.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/EventReceiverAttribute.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/ParamDef.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/GraphEditor.Events.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Utility/ObjectUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Macros/MacroNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/Databases/Colors.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/SerializedUnityEventInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/TaskWizardWindow.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsDictionaryConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Graph/LateUpdateEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/Trigger2DEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Blackboard.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/Rendering/RenderImageEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/BinderConnection.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/UI/UISliderEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchIntCustom.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Node.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Iterators/ForEach.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Iterators/Break.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/SignalCallback.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsMetaType.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Inspectors/GraphOwnerInspector.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/InspectedFieldInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Extractor/JitExtractorNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/ExposedParameter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/Implemented Nodes/Utility.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/BBParameter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/CSharpEventCallbackEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Field/PureReflectedFieldNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsReflectedConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/SerializationPair.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Other/Dummy.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/FlowGraphExtensions.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Inspectors/SignalDefinitionInspector.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Other/Split.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/UI/UIDropdownEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/IBlackboard.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Enums.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Event/ReflectedUnityEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/ConditionTask.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/TriggerEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Macros/Macro.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/IEventData.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/SimplexNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Repeaters/CoroutineState.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Editors/BlackboardEditor.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Input/MousePickEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/TypePrefs.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/CollisionEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/Keyframe_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Drawers/BlackboardSourceDrawer.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/CustomObjectWrappers/IExternalImplementedNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Flow.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/CopyBuffer.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsArrayConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorUtils/EditorUtils.AssetDatabase.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/FlowScriptController.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/ActionList.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Editor.Node.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/GetOtherVariable.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/ParameterVariableNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Event/ReflectedDelegateEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Delegates.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/ReflectionTools.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/TypeConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/DrawerAttributes.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/SimplexNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Field/JitFieldNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/AssetTracker.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Flow Mergers/ANDMerge.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchTag.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Graph/FixedUpdateEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Utility/ColorUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorWrapperFactory.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Nested/FlowNestedBase.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Other/DebugEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_Converters.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Interfaces.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Filters/DoOnce.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/fsRecoveryProcessor.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Inspectors/BlackboardInspector.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/UnityEventCallbackEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorUtils/EditorUtils.GUIEditors.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Togglers/FlipFlop.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/FlowScriptBase.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Nested/FlowNestedFlow.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsPrimitiveConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Method/BaseReflectedMethodNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/GraphEditor.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Delegates.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/GenericInspectorWindow.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Drawers/TaskDrawer.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Utility/GUIStyleUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/ISerializationCollector.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Inspectors/AssetBlackboardInspector.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchComparison.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/XMLDocs.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/ReflectedFieldNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/CustomObjectWrappers/IDropedReferenceNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/ISerializedMethodBaseInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/LayerMask_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Macros/MacroOutputNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Custom/CSharpAutoCallbackEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/GeneratedKeyAttribute.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/ReflectedExtractorNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Selectors/SelectOnEnum.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_ReflectedMethodNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Filters/Chance.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchString.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsResult.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/HierarchyIcons.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/FlowNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Animation/Easing.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Extractor/BaseReflectedExtractorNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/CreateCollection.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/GraphExplorer.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Method/PureReflectedMethodNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Services/MonoManager.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/Vector2Int_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Internal/GraphSource.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/QuickPopup.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/Vector2_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/ExtractorNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Utility/RectUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Application/ApplicationPauseEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/SerializedConstructorInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Drawers/NodeReferenceDrawer.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Editors/BBParameterEditor.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsSerializer.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Services/Threader.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsAttributes.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/ISerializedReflectedInfo.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/JSONSerializer.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Other/Merge.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/Internal/MissingCondition.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Services/EventRouter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/Gradient_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/WeakReferenceTable.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/ReflectionWrappers/ReflectedFunction.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/AnimationCurve_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/LatentActionNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/ParticleCollisionEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Graph/UpdateEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchInt.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/EditorUtils/EditorUtils.ReorderableList.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/ReflectedConstructorNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/Implemented Nodes/Unity.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Other/Finish.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/UI/UIInputFieldEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/Internal/MissingAction.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/OwnerVariable.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsEnumConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/Implemented Nodes/Collections/Lists.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Togglers/Toggle.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Graph/EnableEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Graph/ConstructionEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/ExternalInspectorWindow.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Windows/GraphConsole.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Internal/fsBBParameterProcessor.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Services/Logger.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/OperationTools.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/StyleSheet.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/TransformEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/Random.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/Task.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Internal/MissingNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Other/VariableChangedEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/Internal/BBObjectParameter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/ReflectionWrappers/ReflectedWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/GUIStyleState_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_CodeEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/AssetBlackboard.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/GraphAssetPostProcessor.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/DesignAttributes.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Constructor/PureReflectionConstructorNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/ReflectedMethodNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchEnum.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Other/TryCatch.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/PropertyDrawerFactory.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/PureFunctionNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/IMissingRecoverable.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Variables/SetVariable.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/DynamicParameterDefinition.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_StaticCodeEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/BaseTypes/UniversalDelegateParam.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/Databases/Icons.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Utility/LayerUtils.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/ParticleCollision2DEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/ITaskSystem.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsTypeConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Flow Converters/LatchBool.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/Internal/TaskAgentParameter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/UI/UIToggleEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Variables/VariableSeparator.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsData.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/WeakReferenceList.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/Internal/Constructor/JitConstructorNode.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/ReflectedMethodBaseNodeWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Switchers/SwitchProbability.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Graph.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/CharacterControllerEvents.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/HierarchyTree.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Interfaces.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Implemented/Implemented Nodes/Time.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Functions/Reflected/ReflectedMethodRegistrationOptions.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Input/InputCustomAxisEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Flow Mergers/AwaitAll.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/Connection.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsMetaProperty.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Tasks/ActionTask.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/FlowNodeNested.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/GUIStyle_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Selectors/SelectOnTag.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Editor.Graph.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/BinderConnection(T).cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/Events/Object/UI/UIScrollbarEvent.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Graphs/CanvasGroup(NC).cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/Drawers/BBParameterDrawer.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_CustomObjectWrapper.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/fsListConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Inspectors/GraphInspector.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Repeaters/While.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/Converters/Unity/Vector3Int_DirectConverter.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Design/PartialEditor/GraphEditorUtility.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/_DeprecatedFiles/Legacy_SimplexNodes.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Flow Mergers/ORMerge.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/fsObjectProcessor.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Selectors/SelectOnInt.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Framework/Runtime/Status.cs" />
+    <Compile Include="Assets/ParadoxNotion/FlowCanvas/Modules/FlowGraphs/Nodes/FlowControllers/Selectors/SelectOnBool.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Design/PartialEditor/AOTClassesGenerator.cs" />
+    <Compile Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Services/EventRouterAnimatorMove.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+    <None Include="Assets/ParadoxNotion/CanvasCore/Common/Runtime/Serialization/Full Serializer/License (FullSerializer).txt" />
+    <None Include="Assets/ParadoxNotion/ParadoxNotion.asmdef" />
+    <None Include="Assets/ParadoxNotion/FlowCanvas/README.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -363,6 +663,24 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2021.3.8f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.OdinInspector.Editor">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
     </Reference>
@@ -375,11 +693,20 @@
     <Reference Include="Sirenix.OdinInspector.Attributes">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization.Config">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
@@ -398,6 +725,9 @@
     </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
@@ -768,148 +1098,14 @@
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-      <HintPath>Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-      <HintPath>Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
-      <Project>{BCF001D5-833F-89FF-1F69-5EDC3ACF8D55}</Project>
-      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="ParadoxNotion.csproj">
-      <Project>{8413A366-D9C4-A040-7049-8219FA75D366}</Project>
-      <Name>ParadoxNotion</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

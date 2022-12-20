@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AE2E5F87-03B8-DA6A-8734-9E088007211B}</ProjectGuid>
+    <ProjectGuid>{15E65876-245D-E963-5B65-80F52C7C5824}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,7 +48,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>2021.3.8f1</UnityVersion>
   </PropertyGroup>
@@ -56,68 +56,27 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Attacks/AttackData.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Movement/CombatAnimationManager.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/MultipleChoiceNode.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/DialogController.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/TopicNode.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/PlayerController.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/SO/Data/CharacterData.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/Choice.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/Player.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/WorldTimeDate.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Editors/CustomAttackInspector.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/CameraFollow.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/BaseDialogNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Combat Events/CombatEvents.cs" />
-    <Compile Include="Assets/Scripts/C#/Traditional Classes/StandardEditorRect.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/DialogFlowNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Editors/AttackDatabaseInspector.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Concepts/Dialog.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/MultipleChoiceV2Node.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/TestNode.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/GreetingNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Movement/NpcGridMovement.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Attacks/AttackObject.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Concepts/Statement.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Containers/AttackContainter.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Combat Events/PlayerCombatManager.cs" />
-    <Compile Include="Assets/Scripts/Scriptable Objects/Mechanics/Condition.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/DialogUIController.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/NPC/CombatNPC.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/NPC.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Icons/DialogTopicIcon.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/SO/Data/PlayerData.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Other/Movement.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Mechanics/Movement/GridMovement.cs" />
-    <Compile Include="Assets/Scripts/C#/Nodes/ResponseNode.cs" />
-    <Compile Include="Assets/Scripts/C#/BattleSystem/Containers/AttackDatabase.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/DialogInteractable.cs" />
-    <Compile Include="Assets/Scripts/C#/Dialog/Misc/ChoiceV2.cs" />
-    <Compile Include="Assets/Scripts/C#/Main/Character/CharacterBase.cs" />
+    <Compile Include="Assets/Plugins/Sirenix/Odin Inspector/OdinUpgrader.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" />
+    <None Include="Assets/Plugins/Sirenix/Readme.txt" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/link.xml" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" />
+    <None Include="Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -363,17 +322,11 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.8f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
@@ -381,20 +334,26 @@
     <Reference Include="Unity.Burst.Cecil">
       <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+      <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Serialization.Config">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Rocks">
-      <HintPath>Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
@@ -902,13 +861,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Editor.csproj">
+      <Project>{15D4AB12-3AFF-7920-F911-5EB4E1EADC66}</Project>
+      <Name>Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Runtime.csproj">
+      <Project>{628B51CB-C32B-D382-6CD1-813643A3AEC3}</Project>
+      <Name>Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
       <Project>{BCF001D5-833F-89FF-1F69-5EDC3ACF8D55}</Project>
       <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="ParadoxNotion.csproj">
-      <Project>{8413A366-D9C4-A040-7049-8219FA75D366}</Project>
-      <Name>ParadoxNotion</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
