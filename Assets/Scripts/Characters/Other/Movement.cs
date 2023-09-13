@@ -28,11 +28,11 @@ public class Movement : MonoBehaviour
 
     private void OnEnable()
     {
-        DialogController.InitiateDialog += StopMovement;
+        //DialogController.InitiateDialog += StopMovement;
     }
     private void OnDisable()
     {
-        DialogController.InitiateDialog += StopMovement;
+        //DialogController.InitiateDialog += StopMovement;
     }
 
     private void Awake()
