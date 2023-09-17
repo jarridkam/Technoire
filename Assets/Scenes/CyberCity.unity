@@ -304,7 +304,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 137723009}
-  - component: {fileID: 137723010}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -329,21 +328,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &137723010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137723008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b13173ea43511467db23449b0f3fb123, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogCanvas: {fileID: 649230978}
-  actionCanvas: {fileID: 1869737862}
-  uiText: {fileID: 2068330055}
 --- !u!1 &449507513
 GameObject:
   m_ObjectHideFlags: 0
@@ -17785,7 +17769,6 @@ GameObject:
   - component: {fileID: 470478748}
   - component: {fileID: 470478746}
   - component: {fileID: 470478753}
-  - component: {fileID: 470478754}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Enemy
@@ -17913,24 +17896,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.88466024}
   serializedVersion: 2
   m_Radius: 1.5842547
---- !u!114 &470478754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470478745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bb21caa8874d4b74b54b3cd2607308b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  greetings:
-  - {fileID: 11400000, guid: d2f17c4fb7f794eacb75e6cba54418e0, type: 2}
-  - {fileID: 11400000, guid: fe7fb44ffa7f149599a0ff840311a77e, type: 2}
-  topics:
-  - {fileID: 11400000, guid: 6320261759b104d779e5e9be0d52692f, type: 2}
-  goodbye: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -18430,12 +18395,12 @@ GameObject:
   - component: {fileID: 1115392144}
   - component: {fileID: 1115392150}
   - component: {fileID: 1115392142}
-  - component: {fileID: 1115392151}
   - component: {fileID: 1115392143}
   - component: {fileID: 1115392145}
   - component: {fileID: 1115392146}
   - component: {fileID: 1115392147}
   - component: {fileID: 1115392149}
+  - component: {fileID: 1115392151}
   m_Layer: 0
   m_Name: 'TechNoire '
   m_TagString: Untagged
@@ -18631,10 +18596,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1115392141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12bc388d75c07459fb7f2bd9da16ad82, type: 3}
+  m_Script: {fileID: 11500000, guid: d5f61fab8b2864de1a2f4edcdbb44b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canTalk: 0
 --- !u!1 &1370147054
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,32 @@
+﻿{
+  "DialogName": {
+    "greeting": "What do you want?",
+    "topics": [
+      {
+        "id": 1,
+        "text": "Tell me about this place.",
+        "response": "It's the Mojave Wasteland.",
+        "followup": 2
+      },
+      {
+        "id": 2,
+        "text": "Who controls it?",
+        "response": "The NCR and the Legion are fighting over it.",
+        "choices": [
+          {
+            "choiceId": 1,
+            "text": "I support the NCR.",
+            "response": "So do many others.",
+            "endDialog": true
+          },
+          {
+            "choiceId": 2,
+            "text": "The Legion will rise.",
+            "response": "Be careful who you say that to.",
+            "endDialog": true
+          }
+        ]
+      }
+    ]
+  }
+}
