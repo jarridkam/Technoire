@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Technoire
 {
-    public class Player : CharacterBase
+    public class PlayerStats : CharacterBase
     {
         public int charismaInit;
 
