@@ -1,7 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
+[System.Serializable]
+public class DialogData
+{
+    public string character;
+    public List<DialogOption> topics;
+    public List<DialogOption> greetings;
+    public List<DialogOption> goodbyes;
+}
+
+[System.Serializable]
 public class DialogOption
 {
     public string text;
@@ -9,16 +17,8 @@ public class DialogOption
     public string condition;
     public int priority;
     public string action;
-    public DialogOption newOption; // This replaces the NewOption reference
+    public DialogOption newOption;
 }
 
-[System.Serializable]
-public class DialogData
-{
-    public string character;
-    public List<DialogOption> topics = new List<DialogOption>();
-    public List<DialogOption> greetings = new List<DialogOption>();
-    public List<DialogOption> goodbyes = new List<DialogOption>();
-}
 
 

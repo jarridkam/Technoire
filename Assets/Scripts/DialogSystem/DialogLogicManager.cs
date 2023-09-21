@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class DialogLogicManager : MonoBehaviour
 {
-    public DialogData currentDialog;
-    private List<DialogOption> currentOptions;
+    private DialogData currentDialog;
+    private int currentResponseIndex = 0;
+    private List<string> splitResponses;
 
     private void OnEnable()
     {
@@ -16,19 +17,14 @@ public class DialogLogicManager : MonoBehaviour
         DialogEvents.OnOptionChosen -= OnOptionSelected;
     }
 
-
-    private void Start()
-    {
-        // Assuming you start the dialog when the game starts
-        //StartDialog(currentDialog);
-    }
-
     public void StartDialog(DialogData dialogData)
     {
-        Debug.Log("Starting dialog. DialogData: " + (dialogData == null ? "NULL" : "Exists"));
-
         currentDialog = dialogData;
+        ShowGreeting();
+    }
 
+    private void ShowGreeting()
+    {
         // Display the greeting with the highest priority
         if (currentDialog.greetings != null && currentDialog.greetings.Count > 0)
         {
@@ -40,48 +36,33 @@ public class DialogLogicManager : MonoBehaviour
                     highestPriorityGreeting = greeting;
                 }
             }
-            DialogEvents.UpdateResponse(highestPriorityGreeting.text);
+            DisplayResponse(highestPriorityGreeting.response);
         }
         else
         {
-            // If no greetings, display options directly
             ShowOptions();
         }
-
-        Debug.Log("Received topics count in DialogLogicManager: " + (currentDialog.topics != null ? currentDialog.topics.Count.ToString() : "NULL"));
-
     }
-
-
-    public List<DialogOption> GetCurrentOptions()
-    {
-        // Assuming currentDialog is the active dialog data
-        return currentDialog.topics;
-    }
-
 
     public void ShowOptions()
     {
-        Debug.Log("Showing options. Topics count: " + (currentDialog.topics != null ? currentDialog.topics.Count.ToString() : "NULL"));
-
-        if (currentDialog == null || currentDialog.topics == null || currentDialog.topics.Count == 0)
+        if (currentDialog.topics != null && currentDialog.topics.Count > 0)
         {
-            Debug.LogError("No dialog or topics to show!");
-            return;
+            DialogEvents.UpdateOptions(currentDialog.topics);
         }
-
-        DialogEvents.UpdateOptions(currentDialog.topics);
+        else
+        {
+            Debug.LogError("No topics to show!");
+        }
     }
 
-
-
-    public void OnOptionSelected(int index)
+    private void OnOptionSelected(int index)
     {
-        if (index < 0 || index >= currentOptions.Count)
+        if (index < 0 || index >= currentDialog.topics.Count)
             return;
 
-        DialogOption selectedOption = currentOptions[index];
-        DialogEvents.UpdateResponse(selectedOption.response);
+        DialogOption selectedOption = currentDialog.topics[index];
+        DisplayResponse(selectedOption.response);
 
         // Handle action
         switch (selectedOption.action)
@@ -111,10 +92,31 @@ public class DialogLogicManager : MonoBehaviour
         }
     }
 
-    private List<DialogOption> FilterOptionsBasedOnConditions(List<DialogOption> options)
+    private void DisplayResponse(string response)
     {
-        // Here, you'd check conditions like "stats.intelligence >= 5" and filter the options accordingly.
-        // For now, we'll return all options, but you should implement the condition checks based on your game's logic.
-        return options;
+        splitResponses = new List<string>(response.Split(new string[] { "::" }, System.StringSplitOptions.None));
+        currentResponseIndex = 0;
+        UpdateResponseText();
+    }
+
+    private void UpdateResponseText()
+    {
+        if (currentResponseIndex < splitResponses.Count)
+        {
+            DialogEvents.UpdateResponse(splitResponses[currentResponseIndex]);
+            currentResponseIndex++;
+        }
+        else
+        {
+            ShowOptions();
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            UpdateResponseText();
+        }
     }
 }
