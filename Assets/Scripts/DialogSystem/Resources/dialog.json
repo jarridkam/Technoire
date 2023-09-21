@@ -1,31 +1,42 @@
 ﻿{
-    "character": "John",
-    "topics": [
-        {
-            "text": "What's your name?",
-            "response": "John ... ::I'm the local hunter.",
-            "condition": "stats.intelligence >= 5"
-        },
-        {
-            "text": "what is this place?",
-            "response": "A big city",
-            "condition": "stats.intelligence >= 5"
-        }
-        
-    ],
+    "char": {
+        "name": "John",
+        "image": "none"
+    },
     "greetings": [
         {
-            "text": "Hello, I see you have become stronger!",
-            "priority": 2
-        }
-        
+            "text": "Hello!",
+            "condition": "stats.health > 50",
+            "priority": 1
+        } 
     ],
     "goodbyes": [
         {
             "text": "Goodbye!",
-            "priority": 2,
-            "action": "goodbye"
+            "condition": "stats.health <= 50",
+            "priority": 1
+        }
+    ],
+    "topics": [
+        {
+            "text": "Ask about the weather",
+            "response": "It's sunny today.",
+            "action": "return to original options"
+        },
+        {
+            "text": "Ask about health",
+            "response": "I'm feeling good.",
+            "condition": "stats.intelligence > 5",
+            "action": "set new options",
+            "newOptions": [
+                {
+                    "text": "That's great!",
+                    "response": "Thanks!",
+                    "action": "return to original options"
+                }
+            ]
         }
     ]
 }
+
 
