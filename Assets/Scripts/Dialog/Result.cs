@@ -5,7 +5,7 @@ using UnityEngine;
 public class Result
 {
     [TextArea(5, 30)]
-    public string resultText;
+    public string[] resultText;
 
     public enum ResultType
     {
@@ -17,7 +17,8 @@ public class Result
     public ResultType responseType;
 
     [ShowIf("IsMultiChoice")]
-    public string[] playerChoices; // Displayed only if responseType is MultiChoice
+    public playerChoice[] choice;
+   // public string[] playerChoices; // Displayed only if responseType is MultiChoice
 
     [ListDrawerSettings(ShowIndexLabels = true, DraggableItems = true, Expanded = true)]
     public Condition[] conditions;
@@ -26,4 +27,11 @@ public class Result
     public int importance;
 
     public bool IsMultiChoice() => responseType == ResultType.MultiChoice;
+}
+
+[System.Serializable]
+public class playerChoice
+{
+    public string choice;
+    public Condition choiceCondition;
 }

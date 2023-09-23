@@ -17769,6 +17769,7 @@ GameObject:
   - component: {fileID: 470478748}
   - component: {fileID: 470478746}
   - component: {fileID: 470478753}
+  - component: {fileID: 470478754}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Enemy
@@ -17896,6 +17897,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.88466024}
   serializedVersion: 2
   m_Radius: 1.5842547
+--- !u!114 &470478754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470478745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493bb38916e8a4b31a391b76975ae4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog: {fileID: 11400000, guid: eaf4c510282d74adcb0c3861760be441, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -18402,7 +18416,7 @@ GameObject:
   - component: {fileID: 1115392150}
   m_Layer: 0
   m_Name: 'TechNoire '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19042,6 +19056,7 @@ GameObject:
   - component: {fileID: 2013190034}
   - component: {fileID: 2013190033}
   - component: {fileID: 2013190032}
+  - component: {fileID: 2013190035}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -19099,6 +19114,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2013190035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013190031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ac82b8d41ef42a995a5b1679ba58ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2035105264
 GameObject:
   m_ObjectHideFlags: 0

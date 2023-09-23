@@ -6,9 +6,8 @@ using Sirenix.OdinInspector;
 
 public class Root : ScriptableObject
 {
-    public string greeting;
-    [ListDrawerSettings(ShowIndexLabels = true, DraggableItems = true, Expanded = true)]
-    public Result[] possibleResponses;
+    public int importance;
+    public Condition condition;
 
     // In-game, when a root is triggered:
     // 1. Display the greeting
